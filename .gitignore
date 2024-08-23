@@ -1,4 +1,5 @@
 llvm-*/
+logs/
 
 # files
 *.tar.gz
