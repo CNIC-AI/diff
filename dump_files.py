@@ -27,5 +27,24 @@ def dump_files(directory, suffix=(".h", ".hpp", ".cc", ".cpp")):
 
 if __name__ == "__main__":
     files1 = dump_files(dir1)
-    for file in files1:
-        print(file)
+    # for file in files1:
+    #     print(file)
+    files2 = dump_files(dir2)
+
+    common_elements = sorted(list(set(files1) & set(files2)))
+    # print(common_elements)
+    unique_in_list1 = sorted(list(set(files1) - set(files2)))
+    unique_in_list2 = sorted(list(set(files2) - set(files1)))
+
+    # dump
+    with open("common.txt", "a") as file:
+        for line in common_elements:
+            file.write(line + "\n")
+
+    with open("left.txt", "a") as file:
+        for line in unique_in_list1:
+            file.write(line + "\n")
+
+    with open("right.txt", "a") as file:
+        for line in unique_in_list2:
+            file.write(line + "\n")

@@ -1,4 +1,6 @@
-llvm*/
+llvm-*/
 
 # files
 *.tar.gz
+*.log
+*.txt
