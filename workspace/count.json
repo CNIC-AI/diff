@@ -1,0 +1,790 @@
+[
+    {
+        "filename": "/clang/include/clang/Basic/DirectoryEntry.h",
+        "new_functions": [
+            "clang|OptionalDirectoryEntryRefDegradesToDirectoryEntryPtr|OptionalDirectoryEntryRefDegradesToDirectoryEntryPtr",
+            "clang|OptionalDirectoryEntryRefDegradesToDirectoryEntryPtr|operator const clang::DirectoryEntry *",
+            "clang|OptionalDirectoryEntryRefDegradesToDirectoryEntryPtr|operator="
+        ]
+    },
+    {
+        "filename": "/clang/include/clang/Basic/FileEntry.h",
+        "new_functions": [
+            "clang|OptionalFileEntryRefDegradesToFileEntryPtr|OptionalFileEntryRefDegradesToFileEntryPtr",
+            "clang|OptionalFileEntryRefDegradesToFileEntryPtr|operator const clang::FileEntry *",
+            "clang|OptionalFileEntryRefDegradesToFileEntryPtr|operator="
+        ]
+    },
+    {
+        "filename": "/clang/include/clang/Sema/ExternalSemaSource.h",
+        "new_functions": [
+            "clang|ExternalSemaSource|ReadPendingInstantiationsOfConstexprEntity"
+        ]
+    },
+    {
+        "filename": "/clang/include/clang/Serialization/ASTReader.h",
+        "new_functions": [
+            "clang|BitsUnpacker|~BitsUnpacker"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Analysis/FlowSensitive/DataflowEnvironment.cpp",
+        "new_functions": [
+            "clang::dataflow|Environment|getThisPointeeStorageLocation"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Analysis/FlowSensitive/Models/UncheckedOptionalAccessModel.cpp",
+        "new_functions": [
+            "clang::dataflow::|None|getValueBehindPossiblePointer",
+            "clang::dataflow::|None|hasAnyOptionalType",
+            "clang::dataflow::|None|initializeOptionalReference",
+            "clang::dataflow::|None|isEmptyOptional",
+            "clang::dataflow::|None|isNonEmptyOptional",
+            "clang::dataflow::|None|isNulloptConstructor",
+            "clang::dataflow::|None|maybeInitializeOptionalValueMember",
+            "clang::dataflow|UncheckedOptionalAccessModel|compare",
+            "clang::dataflow|UncheckedOptionalAccessModel|merge",
+            "clang::dataflow|UncheckedOptionalAccessModel|widen"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGDebugInfo.cpp",
+        "new_functions": [
+            "None|None|evaluateConstantInitializer"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Driver/ToolChains/Clang.cpp",
+        "new_functions": [
+            "None|None|getFramePointerKind",
+            "None|None|mustUseNonLeafFramePointerForTarget",
+            "None|None|useFramePointerForTargetByDefault"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Headers/opencl-c-base.h",
+        "new_functions": [
+            "None|None|sqrt"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Parse/ParseOpenACC.cpp",
+        "new_functions": [
+            "clang|Parser|ParseOpenACCRoutineName"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Sema/HLSLExternalSemaSource.cpp",
+        "new_functions": [
+            "clang|HLSLExternalSemaSource|completeBufferType",
+            "clang|HLSLExternalSemaSource|forwardDeclareHLSLTypes"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Sema/MultiplexExternalSemaSource.cpp",
+        "new_functions": [
+            "clang|MultiplexExternalSemaSource|ReadPendingInstantiationsOfConstexprEntity"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Sema/SemaOverload.cpp",
+        "new_functions": [
+            "None|None|EvaluateConvertedConstantExpression"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Sema/SemaTemplateInstantiateDecl.cpp",
+        "new_functions": [
+            "clang|Sema|PerformPendingInstantiationsOfConstexprFunctions"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Serialization/ASTReader.cpp",
+        "new_functions": [
+            "clang|ASTReader|ReadPendingInstantiationsOfConstexprEntity"
+        ]
+    },
+    {
+        "filename": "/clang/lib/StaticAnalyzer/Checkers/ArrayBoundCheckerV2.cpp",
+        "new_functions": [
+            "None|None|getExceedsMsg",
+            "None|None|getPrecedesMsg",
+            "None|None|getTaintMsg",
+            "|ArrayBoundCheckerV2|checkLocation"
+        ]
+    },
+    {
+        "filename": "/clang/test/CXX/drs/dr26xx.cpp",
+        "new_functions": [
+            "dr2628|None|f",
+            "dr2631|None|f",
+            "dr2631|None|g",
+            "dr2631|None|k",
+            "dr2631|None|test",
+            "dr2635|None|TemplUse",
+            "dr2635|None|use",
+            "dr2672|None|m"
+        ]
+    },
+    {
+        "filename": "/clang/test/CXX/drs/dr27xx.cpp",
+        "new_functions": [
+            "dr2789|None|test"
+        ]
+    },
+    {
+        "filename": "/clang/test/CXX/drs/dr8xx.cpp",
+        "new_functions": [
+            "dr873|None|f"
+        ]
+    },
+    {
+        "filename": "/clang/unittests/Analysis/FlowSensitive/TypeErasedDataflowAnalysisTest.cpp",
+        "new_functions": [
+            "|SpecialBoolAnalysis|compare",
+            "|SpecialBoolAnalysis|merge"
+        ]
+    },
+    {
+        "filename": "/compiler-rt/lib/orc/macho_platform.cpp",
+        "new_functions": [
+            "|MachOPlatformRuntimeState|lookupSymbolInJITDylib"
+        ]
+    },
+    {
+        "filename": "/compiler-rt/lib/scudo/standalone/tests/wrappers_c_test.cpp",
+        "new_functions": [
+            "None|ScudoWrappersCTest|invalidateAllocHookPtrAs"
+        ]
+    },
+    {
+        "filename": "/flang/lib/Frontend/FrontendActions.cpp",
+        "new_functions": [
+            "Fortran::frontend|CodeGenAction|setUpTargetMachine",
+            "None|None|getExplicitAndImplicitAMDGPUTargetFeatures",
+            "None|None|getExplicitAndImplicitNVPTXTargetFeatures",
+            "None|None|getTargetFeatures",
+            "None|None|setMLIRDataLayout"
+        ]
+    },
+    {
+        "filename": "/flang/lib/Lower/Bridge.cpp",
+        "new_functions": [
+            "|IncrementLoopInfo|operator="
+        ]
+    },
+    {
+        "filename": "/flang/lib/Lower/OpenMP.cpp",
+        "new_functions": [
+            "None|None|genCommonBlockMember"
+        ]
+    },
+    {
+        "filename": "/flang/lib/Lower/PFTBuilder.cpp",
+        "new_functions": [
+            "|PFTBuilder|checkForRoundingModeCall"
+        ]
+    },
+    {
+        "filename": "/flang/runtime/character.cpp",
+        "new_functions": [
+            "Fortran::runtime|None|_FortranACharacterAssign"
+        ]
+    },
+    {
+        "filename": "/flang/runtime/descriptor-io.h",
+        "new_functions": [
+            "Fortran::runtime::io::descr|None|DefaultComponentwiseIO"
+        ]
+    },
+    {
+        "filename": "/flang/tools/tco/tco.cpp",
+        "new_functions": [
+            "None|None|printModuleBody"
+        ]
+    },
+    {
+        "filename": "/libc/src/__support/FPUtil/FPBits.h",
+        "new_functions": [
+            "LIBC_NAMESPACE::fputil|None|get_unbiased_exponent",
+            "LIBC_NAMESPACE::fputil|None|set_unbiased_exponent"
+        ]
+    },
+    {
+        "filename": "/libc/src/__support/FPUtil/x86_64/LongDoubleBits.h",
+        "new_functions": [
+            "LIBC_NAMESPACE::fputil|FPBits|get_unbiased_exponent",
+            "LIBC_NAMESPACE::fputil|FPBits|set_unbiased_exponent"
+        ]
+    },
+    {
+        "filename": "/libc/src/__support/str_to_float.h",
+        "new_functions": [
+            "LIBC_NAMESPACE::internal|None|leading_zeroes"
+        ]
+    },
+    {
+        "filename": "/libc/src/math/generic/math_utils.h",
+        "new_functions": [
+            "LIBC_NAMESPACE|None|as_float",
+            "LIBC_NAMESPACE|None|as_uint32_bits",
+            "LIBC_NAMESPACE|None|as_uint64_bits",
+            "LIBC_NAMESPACE|None|top12_bits"
+        ]
+    },
+    {
+        "filename": "/libc/src/string/memory_utils/utils.h",
+        "new_functions": [
+            "LIBC_NAMESPACE|None|deferred_static_assert",
+            "LIBC_NAMESPACE|None|ge_power2",
+            "LIBC_NAMESPACE|None|is_power2",
+            "LIBC_NAMESPACE|None|is_power2_or_zero",
+            "LIBC_NAMESPACE|None|le_power2",
+            "LIBC_NAMESPACE|None|log2s"
+        ]
+    },
+    {
+        "filename": "/libc/test/src/__support/math_extras_test.cpp",
+        "new_functions": [
+            "LIBC_NAMESPACE|LlvmLibcBlockMathExtrasTest_TODO|LlvmLibcBlockMathExtrasTest_TODO",
+            "LIBC_NAMESPACE|LlvmLibcBlockMathExtrasTest_TODO|Run",
+            "LIBC_NAMESPACE|LlvmLibcBlockMathExtrasTest_TODO|getName"
+        ]
+    },
+    {
+        "filename": "/libc/test/src/__support/str_to_float_test.cpp",
+        "new_functions": [
+            "None|LlvmLibcStrToFloatTest_EiselLemireFloat64AsLongDouble|LlvmLibcStrToFloatTest_EiselLemireFloat64AsLongDouble",
+            "None|LlvmLibcStrToFloatTest_EiselLemireFloat64AsLongDouble|Run",
+            "None|LlvmLibcStrToFloatTest_EiselLemireFloat64AsLongDouble|getName",
+            "None|LlvmLibcStrToFloatTest_LeadingZeroes|LlvmLibcStrToFloatTest_LeadingZeroes",
+            "None|LlvmLibcStrToFloatTest_LeadingZeroes|Run",
+            "None|LlvmLibcStrToFloatTest_LeadingZeroes|getName"
+        ]
+    },
+    {
+        "filename": "/libc/test/src/search/hsearch_test.cpp",
+        "new_functions": [
+            "None|LlvmLibcHSearchTest_InsertTooMany|LlvmLibcHSearchTest_InsertTooMany",
+            "None|LlvmLibcHSearchTest_InsertTooMany|Run",
+            "None|LlvmLibcHSearchTest_InsertTooMany|getName"
+        ]
+    },
+    {
+        "filename": "/libc/test/src/string/memory_utils/utils_test.cpp",
+        "new_functions": [
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_GEPowerOf2|LlvmLibcUtilsTest_GEPowerOf2",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_GEPowerOf2|Run",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_GEPowerOf2|getName",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_IsPowerOfTwoOrZero|LlvmLibcUtilsTest_IsPowerOfTwoOrZero",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_IsPowerOfTwoOrZero|Run",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_IsPowerOfTwoOrZero|getName",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_IsPowerOfTwo|LlvmLibcUtilsTest_IsPowerOfTwo",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_IsPowerOfTwo|Run",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_IsPowerOfTwo|getName",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_LEPowerOf2|LlvmLibcUtilsTest_LEPowerOf2",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_LEPowerOf2|Run",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_LEPowerOf2|getName",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_Log2|LlvmLibcUtilsTest_Log2",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_Log2|Run",
+            "LIBC_NAMESPACE|LlvmLibcUtilsTest_Log2|getName"
+        ]
+    },
+    {
+        "filename": "/libcxx/test/tools/clang_tidy_checks/header_exportable_declarations.cpp",
+        "new_functions": [
+            "libcpp|None|is_reserved_name"
+        ]
+    },
+    {
+        "filename": "/lldb/source/Plugins/SymbolFile/DWARF/DWARFASTParserClang.cpp",
+        "new_functions": [
+            "None|DWARFASTParserClang|FindConstantOnVariableDefinition"
+        ]
+    },
+    {
+        "filename": "/lldb/source/Utility/ConstString.cpp",
+        "new_functions": [
+            "None|Pool|hash"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/ADT/SmallString.h",
+        "new_functions": [
+            "llvm|None|endswith",
+            "llvm|None|startswith"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/ADT/StringRef.h",
+        "new_functions": [
+            "llvm|StringRef|endswith_insensitive",
+            "llvm|StringRef|startswith_insensitive"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/TargetLowering.h",
+        "new_functions": [
+            "llvm|TargetLowering|lowerAtomicLoadAsLoadSDNode",
+            "llvm|TargetLowering|lowerAtomicStoreAsStoreSDNode"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/IR/DerivedTypes.h",
+        "new_functions": [
+            "llvm|PointerType|getWithSamePointeeType",
+            "llvm|PointerType|hasSameElementTypeAs",
+            "llvm|PointerType|isOpaque",
+            "llvm|PointerType|isOpaqueOrPointeeTypeMatches"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/IR/IRBuilder.h",
+        "new_functions": [
+            "llvm|IRBuilderBase|getInt8PtrTy"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/MC/MCSchedule.h",
+        "new_functions": [
+            "llvm|MCSchedModel|GetDefaultSchedModel"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/MC/MCXCOFFStreamer.h",
+        "new_functions": [
+            "llvm|MCXCOFFStreamer|emitXCOFFRenameDirective"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/Transforms/IPO/EmbedBitcodePass.h",
+        "new_functions": [
+            "llvm|EmbedBitcodeOptions|EmbedBitcodeOptions"
+        ]
+    },
+    {
+        "filename": "/llvm/include/llvm/Transforms/Instrumentation/InstrProfiling.h",
+        "new_functions": [
+            "llvm|InstrProfiling|InstrProfiling",
+            "llvm|PerFunctionProfileData|PerFunctionProfileData"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Analysis/LazyValueInfo.cpp",
+        "new_functions": [
+            "None|None|getConstantRangeOrFull",
+            "None|None|getValueFromConditionImpl"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GCMetadata.cpp",
+        "new_functions": [
+            "llvm|None|createGCInfoPrinter",
+            "|Printer|Printer",
+            "|Printer|doFinalization",
+            "|Printer|getAnalysisUsage",
+            "|Printer|getPassName",
+            "|Printer|runOnFunction"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/InterleavedAccessPass.cpp",
+        "new_functions": [
+            "|InterleavedAccess|lowerDeinterleaveIntrinsic",
+            "|InterleavedAccess|lowerInterleaveIntrinsic",
+            "|InterleavedAccess|lowerInterleavedLoad",
+            "|InterleavedAccess|lowerInterleavedStore",
+            "|InterleavedAccess|replaceBinOpShuffles",
+            "|InterleavedAccess|tryReplaceExtracts"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectOptimize.cpp",
+        "new_functions": [
+            "|SelectOptimize|checkLoopHeuristics",
+            "|SelectOptimize|collectSelectGroups",
+            "|SelectOptimize|computeInstCost",
+            "|SelectOptimize|computeLoopCosts",
+            "|SelectOptimize|convertProfitableSIGroups",
+            "|SelectOptimize|findProfitableSIGroupsBase",
+            "|SelectOptimize|findProfitableSIGroupsInnerLoops",
+            "|SelectOptimize|getExclBackwardsSlice",
+            "|SelectOptimize|getMispredictionCost",
+            "|SelectOptimize|getPredictedPathCost",
+            "|SelectOptimize|getSIset",
+            "|SelectOptimize|hasExpensiveColdOperand",
+            "|SelectOptimize|isConvertToBranchProfitableBase",
+            "|SelectOptimize|isSelectHighlyPredictable",
+            "|SelectOptimize|isSelectKindSupported",
+            "|SelectOptimize|optimizeSelects",
+            "|SelectOptimize|optimizeSelectsBase",
+            "|SelectOptimize|optimizeSelectsInnerLoops"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SjLjEHPrepare.cpp",
+        "new_functions": [
+            "|SjLjEHPrepare|getAnalysisUsage",
+            "|SjLjEHPrepare|insertCallSiteStore",
+            "|SjLjEHPrepare|lowerAcrossUnwindEdges",
+            "|SjLjEHPrepare|lowerIncomingArguments",
+            "|SjLjEHPrepare|setupEntryBlockAndCallSites",
+            "|SjLjEHPrepare|setupFunctionContext",
+            "|SjLjEHPrepare|substituteLPadValues"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/WasmEHPrepare.cpp",
+        "new_functions": [
+            "|WasmEHPrepare|prepareEHPad",
+            "|WasmEHPrepare|prepareEHPads",
+            "|WasmEHPrepare|prepareThrows"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/WinEHPrepare.cpp",
+        "new_functions": [
+            "|WinEHPrepare|cleanupPreparedFunclets",
+            "|WinEHPrepare|cloneCommonBlocks",
+            "|WinEHPrepare|colorFunclets",
+            "|WinEHPrepare|demotePHIsOnFunclets",
+            "|WinEHPrepare|doFinalization",
+            "|WinEHPrepare|getAnalysisUsage",
+            "|WinEHPrepare|insertPHILoads",
+            "|WinEHPrepare|insertPHIStore",
+            "|WinEHPrepare|insertPHIStores",
+            "|WinEHPrepare|prepareExplicitEH",
+            "|WinEHPrepare|removeImplausibleInstructions",
+            "|WinEHPrepare|replaceUseWithLoad",
+            "|WinEHPrepare|verifyPreparedFunclets"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/ExecutionEngine/Orc/LLJIT.cpp",
+        "new_functions": [
+            "|ORCPlatformSupport|ORCPlatformSupport",
+            "|ORCPlatformSupport|deinitialize",
+            "|ORCPlatformSupport|initialize"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/ExecutionEngine/Orc/MachOPlatform.cpp",
+        "new_functions": [
+            "llvm::orc|MachOPlatform|rt_lookupSymbol",
+            "llvm::orc|RtLookupNotifyComplete|RtLookupNotifyComplete",
+            "llvm::orc|RtLookupNotifyComplete|operator()",
+            "|MachOHeaderMaterializationUnit|MachOHeaderMaterializationUnit",
+            "|MachOHeaderMaterializationUnit|addMachOHeader",
+            "|MachOHeaderMaterializationUnit|createHeaderBlock",
+            "|MachOHeaderMaterializationUnit|createHeaderInterface",
+            "|MachOHeaderMaterializationUnit|discard",
+            "|MachOHeaderMaterializationUnit|getName",
+            "|MachOHeaderMaterializationUnit|materialize"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/IR/DebugInfo.cpp",
+        "new_functions": [
+            "llvm|None|FindDbgDeclareUses"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/IR/LLVMContextImpl.h",
+        "new_functions": [
+            "llvm|DenseMapAPFloatKeyInfo|getEmptyKey",
+            "llvm|DenseMapAPFloatKeyInfo|getHashValue",
+            "llvm|DenseMapAPFloatKeyInfo|getTombstoneKey",
+            "llvm|DenseMapAPFloatKeyInfo|isEqual"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Passes/PassBuilder.cpp",
+        "new_functions": [
+            "|None|parseEmbedBitcodePassOptions"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/AArch64/AArch64ISelDAGToDAG.cpp",
+        "new_functions": [
+            "|AArch64DAGToDAGISel|ImmToTile"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/AArch64/AsmParser/AArch64AsmParser.cpp",
+        "new_functions": [
+            "|AArch64Operand|addLSLImm3ShifterOperands",
+            "|AArch64Operand|isLSLImm3Shift"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/AMDGPU/GCNHazardRecognizer.cpp",
+        "new_functions": [
+            "None|None|isVALUSPF",
+            "llvm|GCNHazardRecognizer|checkBranchHazards",
+            "llvm|GCNHazardRecognizer|checkVALUSPFHazards"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/AMDGPU/GCNSubtarget.h",
+        "new_functions": [
+            "llvm|GCNSubtarget|hasGFX926Insts"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/AMDGPU/SIInstrInfo.cpp",
+        "new_functions": [
+            "llvm|SIInstrInfo|splitScalar64BitAddSub"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/BPF/BPFAbstractMemberAccess.cpp",
+        "new_functions": [
+            "|BPFAbstractMemberAccess|getConstant",
+            "|BPFAbstractMemberAccess|replaceWithGEP"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/PowerPC/PPCAsmPrinter.cpp",
+        "new_functions": [
+            "None|None|hasTLSFlag"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/PowerPC/PPCInstrInfo.cpp",
+        "new_functions": [
+            "llvm|PPCInstrInfo|getSerializableBitmaskMachineOperandTargetFlags"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/RISCV/RISCVRVVInitUndef.cpp",
+        "new_functions": [
+            "|RISCVInitUndef|handleImplicitDef"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/X86/X86ISelLowering.cpp",
+        "new_functions": [
+            "None|None|canonicalizeShuffleWithBinOps",
+            "llvm|X86TargetLowering|lowerAtomicLoadAsLoadSDNode",
+            "llvm|X86TargetLowering|lowerAtomicStoreAsStoreSDNode"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/XCore/XCoreISelLowering.cpp",
+        "new_functions": [
+            "llvm|XCoreTargetLowering|LowerATOMIC_LOAD",
+            "llvm|XCoreTargetLowering|LowerATOMIC_STORE",
+            "llvm|XCoreTargetLowering|getTargetMMOFlags"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Target/XCore/XCoreISelLowering.h",
+        "new_functions": [
+            "llvm|XCoreTargetLowering|shouldInsertFencesForAtomic"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Transforms/Instrumentation/InstrProfiling.cpp",
+        "new_functions": [
+            "llvm|InstrProfiling|computeNumValueSiteCounts",
+            "llvm|InstrProfiling|createDataVariable",
+            "llvm|InstrProfiling|createRegionBitmaps",
+            "llvm|InstrProfiling|createRegionCounters",
+            "llvm|InstrProfiling|emitInitialization",
+            "llvm|InstrProfiling|emitNameData",
+            "llvm|InstrProfiling|emitRegistration",
+            "llvm|InstrProfiling|emitRuntimeHook",
+            "llvm|InstrProfiling|emitUses",
+            "llvm|InstrProfiling|emitVNodes",
+            "llvm|InstrProfiling|getBitmapAddress",
+            "llvm|InstrProfiling|getCounterAddress",
+            "llvm|InstrProfiling|getOrCreateRegionBitmaps",
+            "llvm|InstrProfiling|getOrCreateRegionCounters",
+            "llvm|InstrProfiling|isCounterPromotionEnabled",
+            "llvm|InstrProfiling|isRuntimeCounterRelocationEnabled",
+            "llvm|InstrProfiling|lowerCover",
+            "llvm|InstrProfiling|lowerCoverageData",
+            "llvm|InstrProfiling|lowerIncrement",
+            "llvm|InstrProfiling|lowerIntrinsics",
+            "llvm|InstrProfiling|lowerMCDCCondBitmapUpdate",
+            "llvm|InstrProfiling|lowerMCDCTestVectorBitmapUpdate",
+            "llvm|InstrProfiling|lowerTimestamp",
+            "llvm|InstrProfiling|lowerValueProfileInst",
+            "llvm|InstrProfiling|maybeSetComdat",
+            "llvm|InstrProfiling|promoteCounterLoadStores",
+            "llvm|InstrProfiling|run",
+            "llvm|InstrProfiling|setupProfileSection"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Transforms/Utils/Local.cpp",
+        "new_functions": [
+            "None|None|getDebugValueLocDPV"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Transforms/Vectorize/LoopVectorize.cpp",
+        "new_functions": [
+            "llvm|InnerLoopVectorizer|truncateToMinimalBitwidths"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/Transforms/Vectorize/VPlan.h",
+        "new_functions": [
+            "llvm|VPTransformState|hasAnyVectorValue"
+        ]
+    },
+    {
+        "filename": "/llvm/tools/llvm-exegesis/lib/Error.cpp",
+        "new_functions": [
+            "llvm::exegesis|SnippetCrash|convertToErrorCode",
+            "llvm::exegesis|SnippetCrash|log"
+        ]
+    },
+    {
+        "filename": "/llvm/tools/llvm-exegesis/lib/Error.h",
+        "new_functions": [
+            "llvm::exegesis|SnippetCrash|SnippetCrash"
+        ]
+    },
+    {
+        "filename": "/llvm/tools/llvm-readtapi/llvm-readtapi.cpp",
+        "new_functions": [
+            "|None|getInterfaceFile",
+            "|None|handleCompareAction",
+            "|None|handleMergeAction",
+            "|None|handleSingleFileAction",
+            "|None|handleWriteAction",
+            "|None|reportError"
+        ]
+    },
+    {
+        "filename": "/llvm/unittests/Analysis/VectorFunctionABITest.cpp",
+        "new_functions": [
+            "|VFABIParserTest|IsMasked"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/CAPI/Dialect/AMDGPU.cpp",
+        "new_functions": [
+            "None|None|mlirGetDialectHandle__ml_program__"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Conversion/ArmSMEToSCF/ArmSMEToSCF.cpp",
+        "new_functions": [
+            "|TileVectorPrintOpConversion|matchAndRewrite"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Conversion/VectorToArmSME/VectorToArmSME.cpp",
+        "new_functions": [
+            "None|None|getLoopOverTileSlices"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/Complex/IR/ComplexOps.cpp",
+        "new_functions": [
+            "None|ArithBitcast|matchAndRewrite"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/MemRef/IR/MemRefOps.cpp",
+        "new_functions": [
+            "::saturated_arith|Wrapper|asOffset",
+            "::saturated_arith|Wrapper|asSize",
+            "::saturated_arith|Wrapper|asStride",
+            "::saturated_arith|Wrapper|offset",
+            "::saturated_arith|Wrapper|operator!=",
+            "::saturated_arith|Wrapper|operator*",
+            "::saturated_arith|Wrapper|operator+",
+            "::saturated_arith|Wrapper|operator==",
+            "::saturated_arith|Wrapper|size",
+            "::saturated_arith|Wrapper|stride"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/Mesh/IR/MeshOps.cpp",
+        "new_functions": [
+            "None|None|isMeshDimensionDynamic"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/SCF/IR/SCF.cpp",
+        "new_functions": [
+            "|LastTensorLoadCanonicalization|matchAndRewrite"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/SparseTensor/Transforms/CodegenEnv.cpp",
+        "new_functions": [
+            "mlir::sparse_tensor|CodegenEnv|clearValidLexInsert",
+            "mlir::sparse_tensor|CodegenEnv|setValidLexInsert"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/SparseTensor/Transforms/CodegenEnv.h",
+        "new_functions": [
+            "mlir::sparse_tensor|CodegenEnv|getLoopDepth"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/SparseTensor/Transforms/LoopEmitter.cpp",
+        "new_functions": [
+            "None|None|loadSliceNextPosPtrStart",
+            "None|None|loadSlicePosPtr",
+            "None|None|updateSlicePosPtr",
+            "mlir::sparse_tensor|LoopEmitter|forwardsReducedSliceLevelTreeIt",
+            "mlir::sparse_tensor|LoopEmitter|invalidateSliceIterIdx"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/Tensor/IR/TensorOps.cpp",
+        "new_functions": [
+            "None|None|operandsAndShape"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/Vector/Transforms/VectorTransferOpTransforms.cpp",
+        "new_functions": [
+            "None|None|hasMatchingInnerContigousShape"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Pass/PassDetail.h",
+        "new_functions": [
+            "mlir|PassExecutionAction|PassExecutionAction",
+            "mlir|PassExecutionAction|getOp",
+            "mlir|PassExecutionAction|getPass"
+        ]
+    },
+    {
+        "filename": "/openmp/libomptarget/src/device.cpp",
+        "new_functions": [
+            "None|DeviceTy|associatePtr",
+            "None|DeviceTy|deallocTgtPtrAndEntry",
+            "None|DeviceTy|disassociatePtr",
+            "None|DeviceTy|eraseMapEntry",
+            "None|DeviceTy|getTargetPointer",
+            "None|DeviceTy|getTgtPtrBegin",
+            "None|DeviceTy|initOnce",
+            "None|DeviceTy|lookupMapping",
+            "None|None|deviceIsReady",
+            "None|None|printCopyInfo"
+        ]
+    },
+    {
+        "filename": "/openmp/libomptarget/src/omptarget.cpp",
+        "new_functions": [
+            "None|None|handleDefaultTargetOffload",
+            "None|None|isOffloadDisabled"
+        ]
+    },
+    {
+        "filename": "/openmp/libomptarget/src/private.h",
+        "new_functions": [
+            "None|TargetMemcpyArgsTy|TargetMemcpyArgsTy"
+        ]
+    }
+]
