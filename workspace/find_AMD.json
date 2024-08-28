@@ -1,5 +1,13 @@
 [
     {
+        "filename": "/clang/include/clang/Basic/CodeGenOptions.h",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/Basic/CodeGenOptions.cpp",
+        "functions": []
+    },
+    {
         "filename": "/clang/lib/Basic/Targets/AMDGPU.cpp",
         "functions": []
     },
@@ -13,9 +21,123 @@
         ]
     },
     {
+        "filename": "/clang/lib/CodeGen/BackendUtil.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGAtomic.cpp",
+        "functions": [
+            "clang::CodeGen|CodeGenFunction|EmitAtomicExpr"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGBuilder.h",
+        "functions": [
+            "clang::CodeGen|CGBuilderTy|CreateAtomicCmpXchg",
+            "clang::CodeGen|CGBuilderTy|CreateAtomicRMW"
+        ]
+    },
+    {
         "filename": "/clang/lib/CodeGen/CGBuiltin.cpp",
         "functions": [
-            "clang::CodeGen|CodeGenFunction|EmitAMDGPUBuiltinExpr"
+            "clang::CodeGen|CodeGenFunction|EmitAArch64BuiltinExpr",
+            "clang::CodeGen|CodeGenFunction|EmitAArch64SVEBuiltinExpr",
+            "clang::CodeGen|CodeGenFunction|EmitAMDGPUBuiltinExpr",
+            "clang::CodeGen|CodeGenFunction|EmitBuiltinExpr",
+            "clang::CodeGen|CodeGenFunction|EmitNVPTXBuiltinExpr",
+            "clang::CodeGen|CodeGenFunction|EmitSystemZBuiltinExpr"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGCUDANV.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGCUDARuntime.h",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGCall.cpp",
+        "functions": [
+            "clang::CodeGen|CodeGenFunction|EmitCall"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGCall.h",
+        "functions": [
+            "clang::CodeGen|None|operator&",
+            "clang::CodeGen|None|operator|"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGDebugInfo.cpp",
+        "functions": [
+            "clang::CodeGen|CGDebugInfo|CreateCompileUnit",
+            "clang::CodeGen|CGDebugInfo|CreateRecordStaticField",
+            "clang::CodeGen|CGDebugInfo|EmitGlobalVariable",
+            "clang::CodeGen|CGDebugInfo|finalize"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGDebugInfo.h",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGExpr.cpp",
+        "functions": [
+            "clang::CodeGen|CodeGenFunction|EmitLValueForField"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGExprComplex.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGExprScalar.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGHLSLRuntime.cpp",
+        "functions": [
+            "clang::CodeGen|CGHLSLRuntime|addBufferResourceAnnotation",
+            "clang::CodeGen|CGHLSLRuntime|annotateHLSLResource",
+            "clang::CodeGen|CGHLSLRuntime|finishCodeGen"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGHLSLRuntime.h",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGOpenMPRuntime.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGOpenMPRuntimeGPU.cpp",
+        "functions": [
+            "clang::CodeGen|CGOpenMPRuntimeGPU|emitOutlinedFunctionCall",
+            "clang::CodeGen|CGOpenMPRuntimeGPU|getParameterAddress",
+            "clang::CodeGen|CGOpenMPRuntimeGPU|processRequiresDirective"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CGStmtOpenMP.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CodeGenModule.cpp",
+        "functions": [
+            "clang::CodeGen|CodeGenModule|GetAddrOfGlobalTemporary",
+            "clang::CodeGen|CodeGenModule|GetOrCreateMultiVersionResolver",
+            "clang::CodeGen|CodeGenModule|emitMultiVersionFunctions"
+        ]
+    },
+    {
+        "filename": "/clang/lib/CodeGen/CodeGenTBAA.cpp",
+        "functions": [
+            "clang::CodeGen|CodeGenTBAA|getBaseTypeInfo",
+            "clang::CodeGen|CodeGenTBAA|getBaseTypeInfoHelper",
+            "clang::CodeGen|CodeGenTBAA|getTypeInfoHelper"
         ]
     },
     {
@@ -25,18 +147,419 @@
         ]
     },
     {
+        "filename": "/clang/lib/Driver/ToolChains/Flang.cpp",
+        "functions": [
+            "clang::driver::tools|Flang|addCodegenOptions"
+        ]
+    },
+    {
+        "filename": "/clang/lib/Frontend/CompilerInvocation.cpp",
+        "functions": [
+            "clang|CompilerInvocation|ParseCodeGenArgs"
+        ]
+    },
+    {
+        "filename": "/clang/test/CodeGenCXX/RelativeVTablesABI/member-function-pointer.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/CodeGenCXX/attr-target-clones.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/CodeGenCXX/debug-info-class.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/CodeGenCXX/debug-info-static-member.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/distribute_parallel_for_simd_private_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/distribute_simd_private_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/parallel_reduction_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/target_data_use_device_addr_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/target_teams_distribute_parallel_for_simd_private_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/target_teams_distribute_simd_private_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/teams_distribute_parallel_for_simd_private_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/test/OpenMP/teams_distribute_simd_private_codegen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/clang/utils/TableGen/RISCVVEmitter.cpp",
+        "functions": [
+            "None|None|emitCodeGenSwitchBody"
+        ]
+    },
+    {
+        "filename": "/flang/include/flang/Optimizer/CodeGen/Target.h",
+        "functions": [
+            "fir|CodeGenSpecifics|CodeGenSpecifics"
+        ]
+    },
+    {
+        "filename": "/flang/include/flang/Optimizer/CodeGen/TypeConverter.h",
+        "functions": []
+    },
+    {
+        "filename": "/flang/lib/Frontend/CompilerInvocation.cpp",
+        "functions": [
+            "None|None|parseCodeGenArgs"
+        ]
+    },
+    {
         "filename": "/flang/lib/Frontend/FrontendActions.cpp",
         "functions": [
+            "Fortran::frontend|CodeGenAction|setUpTargetMachine",
             "None|None|getExplicitAndImplicitAMDGPUTargetFeatures",
+            "Fortran::frontend|CodeGenAction|beginSourceFileAction",
+            "Fortran::frontend|CodeGenAction|executeAction",
+            "Fortran::frontend|CodeGenAction|generateLLVMIR",
+            "Fortran::frontend|CodeGenAction|runOptimizationPipeline",
             "None|None|addAMDGPUSpecificMLIRItems"
         ]
+    },
+    {
+        "filename": "/flang/lib/Optimizer/CodeGen/CodeGen.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/flang/lib/Optimizer/CodeGen/Target.cpp",
+        "functions": [
+            "fir|CodeGenSpecifics|get"
+        ]
+    },
+    {
+        "filename": "/flang/lib/Optimizer/CodeGen/TargetRewrite.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/flang/lib/Optimizer/CodeGen/TypeConverter.cpp",
+        "functions": []
     },
     {
         "filename": "/libc/utils/gpu/loader/amdgpu/Loader.cpp",
         "functions": []
     },
     {
+        "filename": "/llvm/include/llvm/CodeGen/AccelTable.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/BasicTTIImpl.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/CallingConvLower.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/CodeGenPassBuilder.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/FunctionLoweringInfo.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/GlobalISel/CombinerHelper.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/GlobalISel/LegacyLegalizerInfo.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/GlobalISel/LegalizerHelper.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/GlobalISel/MachineIRBuilder.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/IndirectThunks.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/MIRYamlMapping.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/MachineBasicBlock.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/MacroFusion.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/Passes.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/PseudoSourceValue.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/SchedulerRegistry.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/SelectionDAGISel.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/TargetInstrInfo.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/TargetLowering.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/include/llvm/CodeGen/TargetSchedule.h",
+        "functions": []
+    },
+    {
         "filename": "/llvm/lib/BinaryFormat/AMDGPUMetadataVerifier.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/AsmPrinter/AccelTable.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/AsmPrinter/AsmPrinter.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/AsmPrinter/DwarfDebug.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/AssignmentTrackingAnalysis.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/BasicBlockSectionsProfileReader.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/CodeGenPrepare.cpp",
+        "functions": [
+            "|CodeGenPrepare|optimizeInst",
+            "|CodeGenPrepare|optimizeSelectInst",
+            "|CodeGenPrepare|splitLargeGEPOffsets"
+        ]
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/DwarfEHPrepare.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GCMetadata.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GlobalISel/CombinerHelper.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GlobalISel/IRTranslator.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GlobalISel/LegalizerHelper.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GlobalISel/LegalizerInfo.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GlobalISel/MachineIRBuilder.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/GlobalMerge.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/InlineSpiller.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/InterleavedAccessPass.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/JMCInstrumenter.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/LiveRangeEdit.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MIRParser/MILexer.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MIRParser/MIParser.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MachineCSE.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MachineFunction.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MachineOperand.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MachinePipeliner.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MachineScheduler.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MachineVerifier.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/MacroFusion.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/PseudoSourceValue.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/RegAllocFast.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/RegisterCoalescer.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SafeStack.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SanitizerBinaryMetadata.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectOptimize.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/DAGCombiner.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/FunctionLoweringInfo.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/LegalizeDAG.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/LegalizeFloatTypes.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/LegalizeIntegerTypes.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/LegalizeTypes.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/ScheduleDAGSDNodes.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/SelectionDAG.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SelectionDAG/SelectionDAGISel.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/SjLjEHPrepare.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/StackColoring.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/StackSlotColoring.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/TargetInstrInfo.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/TargetLoweringObjectFileImpl.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/TargetPassConfig.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/TargetSchedule.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/WasmEHPrepare.cpp",
+        "functions": []
+    },
+    {
+        "filename": "/llvm/lib/CodeGen/WinEHPrepare.cpp",
         "functions": []
     },
     {
@@ -298,6 +821,27 @@
             "None|None|mlirContextLoadAMDGPUDialect",
             "None|None|mlirDialectRegistryInsertAMDGPUDialect"
         ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/SparseTensor/Transforms/CodegenEnv.cpp",
+        "functions": [
+            "mlir::sparse_tensor|CodegenEnv|clearValidLexInsert",
+            "mlir::sparse_tensor|CodegenEnv|setValidLexInsert",
+            "mlir::sparse_tensor|CodegenEnv|atExpandLevel",
+            "mlir::sparse_tensor|CodegenEnv|getCustomRedId",
+            "mlir::sparse_tensor|CodegenEnv|startReduc",
+            "mlir::sparse_tensor|CodegenEnv|updateReduc"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/SparseTensor/Transforms/CodegenEnv.h",
+        "functions": [
+            "mlir::sparse_tensor|CodegenEnv|getLoopDepth"
+        ]
+    },
+    {
+        "filename": "/mlir/lib/Dialect/SparseTensor/Transforms/SparseGPUCodegen.cpp",
+        "functions": []
     },
     {
         "filename": "/openmp/libomptarget/plugins-nextgen/amdgpu/dynamic_hsa/hsa_ext_amd.h",

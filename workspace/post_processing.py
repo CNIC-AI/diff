@@ -13,8 +13,12 @@ class Policy(ABC):
     def check(self, item):
         pass
 
-    @abstractmethod
     def post_processing(self):
+        self._post_processing()
+        print("---")
+
+    @abstractmethod
+    def _post_processing(self):
         pass
 
 
@@ -43,7 +47,7 @@ class Count(Policy):
                     }
                 )
 
-    def post_processing(self):
+    def _post_processing(self):
         print(f"files: {self.num_files}")
         print(f"new functions: {self.num_new_functions}")
         print(f"functions: {self.num_functions}")
@@ -61,23 +65,29 @@ class FindAMD(Policy):
         self.data = []
 
     def check(self, item):
-        substr = "AMD"
+        substr = [
+            s.lower()
+            for s in [
+                "AMD",
+                "CODEGEN",
+            ]
+        ]
+
         data = defaultdict(list)
 
+        def exist_substr(sub, main):
+            return any([s in main for s in sub])
+
         for s in item["new_functions"] + item["functions"]:
-            if substr.lower() in s.lower():
+            if exist_substr(substr, s.lower()):
                 data["functions"].append(s)
 
-        if data or substr.lower() in item["filename"].lower():
+        if data or exist_substr(substr, item["filename"].lower()):
             self.num_functions += len(data["functions"])
 
-            temp = {}
-            temp["filename"] = item["filename"]
+            self.data.append({"filename": item["filename"], **data})
 
-            temp.update(data)
-            self.data.append(temp)
-
-    def post_processing(self):
+    def _post_processing(self):
         print(f"AMD-related functions: {self.num_functions}")
 
         with open("./find_AMD.json", "w") as file:
