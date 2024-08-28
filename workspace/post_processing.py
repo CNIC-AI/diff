@@ -5,20 +5,33 @@ from abc import ABC, abstractmethod
 from collections import defaultdict
 
 
-FILE_PATH = "/public/home/wangjh/workspace/jax/diff/logs/20240827221826/functions.json"
+FILE_PATH = "./functions.json"
 
 
 class Policy(ABC):
+    def __init__(self) -> None:
+        super().__init__()
+
+        self.data = []
+
     @abstractmethod
     def check(self, item):
         pass
 
     def post_processing(self):
-        self._post_processing()
+        self._logger()
+
+        self._print()
         print("---")
 
+    def _logger(self):
+        """格式化输出"""
+
+        with open(f"{self.__class__.__name__}.json", "w") as file:
+            json.dump(self.data, file, indent=4)
+
     @abstractmethod
-    def _post_processing(self):
+    def _print(self):
         pass
 
 
@@ -29,8 +42,6 @@ class Count(Policy):
         self.num_files = 0
         self.num_new_functions = 0
         self.num_functions = 0
-
-        self.data = []
 
     def check(self, item):
         self.num_new_functions += len(item["new_functions"])
@@ -47,62 +58,90 @@ class Count(Policy):
                     }
                 )
 
-    def _post_processing(self):
+    def _print(self):
         print(f"files: {self.num_files}")
         print(f"new functions: {self.num_new_functions}")
         print(f"functions: {self.num_functions}")
 
-        # TODO: 写文件
-        with open("./count.json", "w") as file:
-            json.dump(self.data, file, indent=4)
 
-
-class FindAMD(Policy):
+class Find(Policy):
     def __init__(self) -> None:
         super().__init__()
 
         self.num_functions = 0
-        self.data = []
+        self.substr = []  # pattern
 
     def check(self, item):
-        substr = [
-            s.lower()
-            for s in [
-                "AMD",
-                "CODEGEN",
-            ]
-        ]
-
         data = defaultdict(list)
 
-        def exist_substr(sub, main):
-            return any([s in main for s in sub])
+        def match(main):
+            return any([s in main for s in [s.lower() for s in self.substr]])
 
         for s in item["new_functions"] + item["functions"]:
-            if exist_substr(substr, s.lower()):
+            if match(s.lower()):
                 data["functions"].append(s)
 
-        if data or exist_substr(substr, item["filename"].lower()):
+        if data or match(item["filename"].lower()):
             self.num_functions += len(data["functions"])
 
             self.data.append({"filename": item["filename"], **data})
 
-    def _post_processing(self):
-        print(f"AMD-related functions: {self.num_functions}")
+    def _print(self):
+        print(f"{self.__class__.__name__} functions: {self.num_functions}")
 
-        with open("./find_AMD.json", "w") as file:
-            json.dump(self.data, file, indent=4)
+
+class FindAMD(Find):
+    def __init__(self) -> None:
+        super().__init__()
+
+        self.substr.append("AMD")
+
+    def _logger(self):
+        """Find相关后处理使用MarkDown"""
+
+        with open(f"{self.__class__.__name__}.md", "w") as file:
+            cnt = 0
+            file.write(f"# {self.__class__.__name__}\n\n")
+
+            for item in self.data:
+                file.write(f"## {item['filename']}\n\n")
+
+                for s in item["functions"]:
+                    cnt += 1
+
+                    # FIXME: 制作函数相关标题
+                    parts = s.split("|")
+                    parts[1] = "" if parts[1] == "None" else parts[1] + "::"
+
+                    file.write(f"### {cnt}: {parts[1]}{parts[2]}\n\n")
+                    file.write(f"- 解释：\n\n")
+
+
+class FindCodeGen(FindAMD):
+    """_summary_
+
+    Args:
+        FindAMD (_type_): _description_
+    """
+
+    def __init__(self) -> None:
+        super().__init__()
+
+        del self.substr[:]  # 注释本行则选择 AMD + CODEGEN 相关全部函数
+        self.substr.append("CODEGEN")
 
 
 if __name__ == "__main__":
     with open(FILE_PATH, "r") as file:
         data = json.load(file)
 
-    policy_lst = [Count(), FindAMD()]
+    policy_lst = [Count(), FindAMD(), FindCodeGen()]
 
+    # 针对每个json块，应用多种检查策略，每个策略将会不断记录信息
     for item in data:
         for policy in policy_lst:
             policy.check(item)
 
+    # 统一调用“后处理行为”，将每个策略记录到的信息写入日志
     for policy in policy_lst:
         policy.post_processing()
